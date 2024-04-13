@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "previews",
+  "info": {
+    "singularName": "preview",
+    "pluralName": "previews",
+    "displayName": "Preview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
