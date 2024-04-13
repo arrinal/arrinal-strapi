@@ -4,7 +4,8 @@
   "info": {
     "singularName": "preview",
     "pluralName": "previews",
-    "displayName": "Preview"
+    "displayName": "Preview",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,23 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "previews"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
